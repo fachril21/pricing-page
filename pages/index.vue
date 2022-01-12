@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative h-screen">
     <div
       class="fixed z-0 w-full h-full bg-cover bg-gradient-to-r from-purple-100 to-purple-200"
     ></div>
@@ -39,11 +39,15 @@
         </div>
       </div>
     </div>
-    <div class="fixed bottom-0 left-0 z-0">
-      <img src="~/assets/image/bg-bottom.svg" alt="" />
+    <div class="absolute bottom-0 left-0">
+      <div class="fixed bottom-0">
+        <img src="~/assets/image/bg-bottom.svg" alt="" />
+      </div>
     </div>
-    <div class="fixed top-0 right-0 z-0">
-      <img src="~/assets/image/bg-top.svg" alt="" />
+    <div class="absolute top-0 right-0">
+      <div class="fixed right-0">
+        <img src="~/assets/image/bg-top.svg" alt="" />
+      </div>
     </div>
   </div>
 </template>
