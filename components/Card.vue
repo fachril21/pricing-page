@@ -37,7 +37,7 @@
         <button
           class="text-sm w-full p-2 font-semibold rounded-xl transition-all ease-in-out duration-300 delay-75 focus:outline-none"
           :class="{
-            'bg-white  text-purple-700 hover:bg-purple-200': data.isCenter,
+            'bg-white text-purple-700 hover:bg-red-500': data.isCenter,
             'bg-purple-500 text-white hover:bg-purple-600': !data.isCenter,
           }"
         >
