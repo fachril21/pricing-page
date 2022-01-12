@@ -2,7 +2,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: "static",
   head: {
-    title: "code",
+    title: "Pricing Page",
     htmlAttrs: {
       lang: "en",
     },
@@ -12,11 +12,19 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap",
+      },
+    ],
   },
 
+  extractCSS: true,
+
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ["~assets/font.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
